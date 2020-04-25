@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.jgo.video.ui.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/h_fragment_enter"
+            app:exitAnim="@anim/h_fragment_exit"
+            app:popEnterAnim="@anim/h_fragment_pop_enter"
+            app:popExitAnim="@anim/h_fragment_pop_exit"
+            />
+
+        <action
+            android:id="@+id/action_mainFragment_to_newsFragment"
+            app:destination="@id/newsFragment"
+            />
+
+        <action
+            android:id="@+id/action_mainFragment_to_videoFragment"
+            app:destination="@id/videoFragment"
+            app:enterAnim="@anim/h_fragment_enter"
+            app:exitAnim="@anim/h_fragment_exit"
+            app:popEnterAnim="@anim/h_fragment_pop_enter"
+            app:popExitAnim="@anim/h_fragment_pop_exit"
+            />
+
+        <action
+            android:id="@+id/action_mainFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment"
+            app:enterAnim="@anim/h_fragment_enter"
+            app:exitAnim="@anim/h_fragment_exit"
+            app:popEnterAnim="@anim/h_fragment_pop_enter"
+            app:popExitAnim="@anim/h_fragment_pop_exit"
+            />
+        <action
+            android:id="@+id/action_main_to_newsDetail"
+            app:destination="@id/detailActivity">
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.jgo.video.ui.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.jgo.video.ui.fragment.NewsFragment"
+        android:label="fragment_news" >
+        <!--<action
+            android:id="@+id/detail"
+            app:destination="@id/newsDetailFragment">
+            <argument
+                android:name="transition_name"
+                app:argType="string"
+                />
+        </action>-->
+        <action
+            android:id="@+id/detail"
+            app:destination="@id/detailActivity">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.jgo.video.ui.fragment.VideoFragment"
+        android:label="fragment_video" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.jgo.video.ui.fragment.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_search" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.jgo.video.ui.fragment.NewsDetailFragment"
+        android:label="fragment_news_detail"
+        tools:layout="@layout/fragment_news_detail" >
+    </fragment>
+
+    <!-- Detail Activity -->
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.jgo.video.ui.NewsDetailActivity">
+        <argument android:name="transition_name" app:argType="string"/>
+    </activity>
+
+</navigation>

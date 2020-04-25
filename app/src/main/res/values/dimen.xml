@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sliding_up_header">55dp</dimen>
+    <dimen name="sliding_up_header_land">200dp</dimen>
+
+    <!-- common -->
+    <dimen name="status_bar_margin">40dp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <!-- drawer layout-->
+    <dimen name="drawer_layout_width">280dp</dimen>
+    <dimen name="drawer_icon_size">100dp</dimen>
+    <dimen name="drawer_icon_margin_top">40dp</dimen>
+
+    <!-- main layout-->
+    <dimen name="main_item_width">80dp</dimen>
+
+</resources>

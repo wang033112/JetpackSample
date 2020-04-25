@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JgoVideo.iml" filepath="$PROJECT_DIR$/JgoVideo.iml" group="JgoVideo" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="JgoVideo/app" />
+      <module fileurl="file://$PROJECT_DIR$/architecture/architecture.iml" filepath="$PROJECT_DIR$/architecture/architecture.iml" group="JgoVideo/architecture" />
+    </modules>
+  </component>
+</project>
