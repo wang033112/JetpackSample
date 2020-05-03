@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--画出背景的光晕 -->
+
+    <item android:left="65dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="30dp"
+                android:topRightRadius="30dp"/>
+            <gradient
+                android:endColor="#00fffaf0"
+                android:startColor="@color/light_green"
+                android:type="radial"
+                android:gradientRadius="100"/>
+        </shape>
+    </item>
+    <item android:left="25dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#00fffaf0"
+                android:startColor="@color/light_green"
+                android:type="radial"
+                android:gradientRadius="100"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#00fffaf0"
+                android:startColor="@color/light_green"
+                android:type="radial"
+                android:gradientRadius="100"/>
+        </shape>
+    </item>
+
+    <item android:right="25dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#00fffaf0"
+                android:startColor="@color/light_green"
+                android:type="radial"
+                android:gradientRadius="100"/>
+        </shape>
+    </item>
+
+    <item android:right="65dp">
+        <shape android:shape="rectangle" >
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:topLeftRadius="30dp"/>
+            <gradient
+                android:endColor="#00fffaf0"
+                android:startColor="@color/light_green"
+                android:type="radial"
+                android:gradientRadius="100"/>
+        </shape>
+    </item>
+
+    <!-- 画出按钮-->
+    <item android:bottom="10dp" android:right="10dp" android:left="10dp" android:top="10dp">
+        <shape
+            android:shape="rectangle"
+            android:useLevel="false">
+            <corners android:radius="30dp" />
+            <solid android:color="@color/light_green" />
+        </shape>
+    </item>
+
+
+
+</layer-list>

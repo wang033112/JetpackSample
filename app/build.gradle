@@ -48,6 +48,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation project(':architecture')
+    implementation 'com.github.prolificinteractive:material-calendarview:1.4.3'
     //implementation project(':player')
 //    implementation 'com.jgo.player:player:1.1.2'
 

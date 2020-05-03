@@ -7,7 +7,6 @@ import android.transition.Transition;
 import android.transition.TransitionInflater;
 
 import com.jgo.video.R;
-import com.jgo.video.databinding.ActivityMainBinding;
 import com.jgo.video.databinding.ActivityNewsDetailBinding;
 import com.jgo.video.ui.base.BaseActivity;
 import com.jgo.video.utils.ParaUtils;

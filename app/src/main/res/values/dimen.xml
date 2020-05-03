@@ -6,6 +6,7 @@
     <!-- common -->
     <dimen name="status_bar_margin">40dp</dimen>
     <dimen name="text_size_large">20sp</dimen>
+    <dimen name="common_20dp">20dp</dimen>
 
     <!-- drawer layout-->
     <dimen name="drawer_layout_width">280dp</dimen>
@@ -14,5 +15,8 @@
 
     <!-- main layout-->
     <dimen name="main_item_width">80dp</dimen>
+
+    <!-- sub schedule-->
+    <dimen name="logo_size">50dp</dimen>
 
 </resources>

@@ -5,8 +5,10 @@ import android.content.Context;
 import com.jgo.video.R;
 import com.jgo.video.data.bean.ImageInfo;
 import com.jgo.video.data.bean.NewsInfo;
+import com.jgo.video.data.bean.ScheduleInfo;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -78,5 +80,15 @@ public class DataManager {
         imagesList.add(new ImageInfo("file:///android_asset/images/photo_26.jpg", 550));
 
         return imagesList;
+    }
+
+
+    public static List<ScheduleInfo> getScheduleList(Context context) {
+
+        List<ScheduleInfo> scheduleList = new ArrayList<>();
+        for (int i = 0; i < 15; i++) {
+            scheduleList.add(new ScheduleInfo("Lakers", "Mavericks", new Date()));
+        }
+        return scheduleList;
     }
 }
