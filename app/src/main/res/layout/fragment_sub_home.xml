@@ -7,108 +7,305 @@
             type="com.jgo.video.view_model.NewsViewModel" />
     </data>
 
-    <LinearLayout
-        android:id="@+id/fragment_main_home_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/status_bar_margin"
-        android:layout_gravity="center_vertical"
-        android:background="@color/white_smoke"
-        android:orientation="vertical">
-
-        <!--<com.jgo.video.ui.view.ShadowLayout
-            android:layout_width="400dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            app:yc_cornerRadius="18dp"
-            app:yc_dx="3dp"
-            app:yc_dy="0dp"
-            app:yc_shadowColor="@color/colorPrimaryOrange"
-            app:yc_shadowLimit="1dp">
-            </com.jgo.video.ui.view.ShadowLayout>-->
-
-        <!--<LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/fragment_news_title_left"
-                android:layout_width="130dp"
-                android:layout_height="65dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:background="@drawable/shadow_layer"
-                android:text="@string/item_home"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-        </LinearLayout>-->
-
-        <!-- Today Result -->
-        <FrameLayout
-            android:id="@+id/result_layout"
+    <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/common_10dp"
-            android:background="@drawable/layout_bg">
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/status_bar_margin"
+            android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/fragment_main_home_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_smoke"
+            android:orientation="vertical">
 
-            <HorizontalScrollView
+            <!-- Today Result -->
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scrollbars="none">
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_10dp"
+                android:background="@drawable/layout_bg">
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10dp"
+                    android:orientation="vertical">
 
-                    <include layout="@layout/item_player" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <include layout="@layout/item_player"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_5dp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/live_str" />
 
-                    <include layout="@layout/item_player"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/common_5dp"
+                            android:layout_marginEnd="@dimen/common_5dp"
+                            android:layout_marginBottom="@dimen/common_5dp"
+                            android:text="@string/time_str" />
 
-                    <include layout="@layout/item_player" />
+                    </RelativeLayout>
 
-                    <include layout="@layout/item_player"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <include layout="@layout/item_player"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_margin="@dimen/common_10dp"
+                                android:src="@drawable/logo_lakers"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/team_lakers"/>
+                        </LinearLayout>
 
-                    <include layout="@layout/item_player" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
 
-                    <include layout="@layout/item_player"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="90"
+                                android:textSize="30sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/common_10dp"
+                                android:text="VS"/>
 
-                    <include layout="@layout/item_player"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="89"
+                                android:textSize="30sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_margin="@dimen/common_10dp"
+                                android:src="@drawable/logo_mavericks"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/team_mavericks"/>
+                        </LinearLayout>
+                    </LinearLayout>
 
                 </LinearLayout>
-            </HorizontalScrollView>
-        </FrameLayout>
 
-        <!-- My Favorite players -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/common_10dp"
-            android:background="@drawable/layout_bg">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My Favorite players" />
-        </FrameLayout>
+            </FrameLayout>
 
-        <!-- Events -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/common_10dp"
-            android:background="@drawable/layout_bg">
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Today Result -->
+            <FrameLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Events"
-                />
-        </FrameLayout>
-    </LinearLayout>
+                android:layout_margin="@dimen/common_10dp"
+                android:background="@drawable/layout_bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_5dp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/live_str" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/common_5dp"
+                            android:layout_marginEnd="@dimen/common_5dp"
+                            android:layout_marginBottom="@dimen/common_5dp"
+                            android:text="@string/time_str" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_margin="@dimen/common_10dp"
+                                android:src="@drawable/logo_lakers"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/team_lakers"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="90"
+                                android:textSize="30sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/common_10dp"
+                                android:text="VS"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="89"
+                                android:textSize="30sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_margin="@dimen/common_10dp"
+                                android:src="@drawable/logo_mavericks"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/team_mavericks"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!-- My Favorite players -->
+            <FrameLayout
+                android:id="@+id/result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_10dp"
+                android:background="@drawable/layout_bg">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/item_player" />
+
+                        <include layout="@layout/item_player"/>
+
+                        <include layout="@layout/item_player"/>
+
+                        <include layout="@layout/item_player" />
+
+                        <include layout="@layout/item_player"/>
+
+                        <include layout="@layout/item_player"/>
+
+                        <include layout="@layout/item_player" />
+
+                        <include layout="@layout/item_player"/>
+
+                        <include layout="@layout/item_player"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </FrameLayout>
+
+            <!-- Events -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="@dimen/common_10dp"
+                android:background="@drawable/layout_bg"
+                app:cardCornerRadius="@dimen/common_10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/team_lakers_player"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/layout_translucent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="@dimen/common_10dp"
+                        android:text="@string/news_title_str"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Events -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_10dp"
+                android:background="@drawable/layout_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_margin="@dimen/common_10dp"
+                    android:text="Events"
+                    />
+            </FrameLayout>
+            
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </layout>

@@ -20,6 +20,7 @@
 
     <color name="transparent">#00000000</color>
     <color name="trans_black">#a0000000</color>
+    <color name="trans_black_dark">#f0000000</color>
 
     <color name="transColorPrimary">#a0008577</color>
 

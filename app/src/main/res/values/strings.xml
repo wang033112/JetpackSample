@@ -20,11 +20,18 @@
     <string name="item_image">画像</string>
     <string name="item_schedule">日程</string>
 
-    <!-- -->
+    <!-- favorite player -->
     <string name="player_doncic">ルカ・ドンチッチ</string>
-
     <string name="team_lakers">レイカーズ</string>
+    <string name="team_mavericks">マーベリックス</string>
     <string name="follow">フォロー</string>
+
+    <!-- result -->
+    <string name="live_str">中継</string>
+    <string name="time_str">11:09</string>
+
+    <string name="news_title_str">コービーとシャツを交換したイニエスタ</string>
+
 
     <string name="app_slogan">I Love This Game !</string>
     <string name="project_title">本项目中用到的技术点包括：</string>
