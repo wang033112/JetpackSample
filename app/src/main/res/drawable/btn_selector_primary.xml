@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <corners android:radius="10dp"/>
-    <solid android:color="@color/white"/>
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/btn_focused_bg"/>
+    <item android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/btn_enable_bg"/>
+</selector>

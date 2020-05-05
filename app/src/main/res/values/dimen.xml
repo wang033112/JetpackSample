@@ -7,6 +7,9 @@
     <dimen name="status_bar_margin">40dp</dimen>
     <dimen name="text_size_large">20sp</dimen>
     <dimen name="common_20dp">20dp</dimen>
+    <dimen name="common_10dp">10dp</dimen>
+    <dimen name="common_5dp">5dp</dimen>
+    <dimen name="common_3dp">3dp</dimen>
 
     <!-- drawer layout-->
     <dimen name="drawer_layout_width">280dp</dimen>

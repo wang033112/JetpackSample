@@ -11,20 +11,63 @@
             type="com.jgo.video.adapter.NewsAdapter.ItemClick" />-->
     </data>
 
-    <androidx.cardview.widget.CardView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="10dp"
-        android:clickable="true"
-        app:cardCornerRadius="3dp"
-        app:cardElevation="1dp">
-        <ImageView
-            android:id="@+id/sub_image_item_iv"
+        android:padding="@dimen/common_10dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"/>
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/common_3dp"
+            android:background="@drawable/layout_gray_line"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/common_10dp"
+                android:background="@color/white"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/player_doncic"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_5dp"
+                android:text="@string/player_doncic"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_5dp"
+                android:text="@string/team_lakers"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/common_20dp"
+                android:paddingEnd="@dimen/common_20dp"
+                android:paddingTop="@dimen/common_5dp"
+                android:paddingBottom="@dimen/common_5dp"
+                android:layout_margin="@dimen/common_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/btn_selector_primary"
+                android:textColor="@drawable/text_selector_primary"
+                android:text="@string/follow"/>
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </layout>

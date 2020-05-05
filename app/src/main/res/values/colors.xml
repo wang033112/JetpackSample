@@ -6,14 +6,16 @@
     <color name="colorPrimaryOrange">#F9AA33</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="white">#fff</color>
+    <color name="white">#ffffff</color>
     <color name="black">#000</color>
     <color name="gray">#666</color>
-    <color name="light_gray">#999000</color>
+    <color name="light_gray">#e0e0e0</color>
     <color name="silver_gray">#696969</color>
     <color name="white_smoke">#F5F5F5</color>
     <color name="text_gray">#808080</color>
-    <color name="light_green">#8049c29d</color>
+    <color name="light_green">#49c29d</color>
+    <color name="light_green_test">#2979FF</color>
+
 
 
     <color name="transparent">#00000000</color>

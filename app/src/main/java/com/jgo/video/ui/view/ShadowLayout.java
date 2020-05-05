@@ -3,16 +3,21 @@ package com.jgo.video.ui.view;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
+import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.MaskFilter;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import com.jgo.video.R;
+
+import androidx.core.content.ContextCompat;
 
 /**
  * Created by ke-oh on 2020/05/02.
@@ -196,12 +201,17 @@ public class ShadowLayout extends FrameLayout {
         }
 
         Paint shadowPaint = new Paint();
-        shadowPaint.setAntiAlias(true);
+        /*shadowPaint.setAntiAlias(true);
         shadowPaint.setColor(fillColor);
-        shadowPaint.setStyle(Paint.Style.FILL);
-        if (!isInEditMode()) {
+        shadowPaint.setStyle(Paint.Style.FILL);*/
+        /*if (!isInEditMode()) {
             shadowPaint.setShadowLayer(shadowRadius, dx, dy, shadowColor);
-        }
+        }*/
+        shadowPaint.setMaskFilter(new BlurMaskFilter(30, BlurMaskFilter.Blur.SOLID));
+        //shadowPaint.setColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryOrange));
+        //#eceff1
+        shadowPaint.setColor(Color.parseColor("#e3f2fd"));
+        setLayerType(View.LAYER_TYPE_SOFTWARE, shadowPaint);//取消硬件加速
         canvas.drawRoundRect(shadowRect, cornerRadius, cornerRadius, shadowPaint);
         return output;
     }

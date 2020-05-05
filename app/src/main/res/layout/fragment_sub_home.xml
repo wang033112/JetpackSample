@@ -24,12 +24,11 @@
             app:yc_cornerRadius="18dp"
             app:yc_dx="3dp"
             app:yc_dy="0dp"
-            app:yc_shadowColor="#2a999000"
+            app:yc_shadowColor="@color/colorPrimaryOrange"
             app:yc_shadowLimit="1dp">
-            </com.jgo.video.ui.view.ShadowLayout>
-            -->
+            </com.jgo.video.ui.view.ShadowLayout>-->
 
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -46,7 +45,70 @@
                 android:textColor="@color/white"
                 android:textSize="10sp"/>
 
-        </LinearLayout>
+        </LinearLayout>-->
 
+        <!-- Today Result -->
+        <FrameLayout
+            android:id="@+id/result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_10dp"
+            android:background="@drawable/layout_bg">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/item_player" />
+
+                    <include layout="@layout/item_player"/>
+
+                    <include layout="@layout/item_player"/>
+
+                    <include layout="@layout/item_player" />
+
+                    <include layout="@layout/item_player"/>
+
+                    <include layout="@layout/item_player"/>
+
+                    <include layout="@layout/item_player" />
+
+                    <include layout="@layout/item_player"/>
+
+                    <include layout="@layout/item_player"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <!-- My Favorite players -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_10dp"
+            android:background="@drawable/layout_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Favorite players" />
+        </FrameLayout>
+
+        <!-- Events -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_10dp"
+            android:background="@drawable/layout_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                />
+        </FrameLayout>
     </LinearLayout>
 </layout>

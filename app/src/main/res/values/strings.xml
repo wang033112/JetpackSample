@@ -20,6 +20,12 @@
     <string name="item_image">画像</string>
     <string name="item_schedule">日程</string>
 
+    <!-- -->
+    <string name="player_doncic">ルカ・ドンチッチ</string>
+
+    <string name="team_lakers">レイカーズ</string>
+    <string name="follow">フォロー</string>
+
     <string name="app_slogan">I Love This Game !</string>
     <string name="project_title">本项目中用到的技术点包括：</string>
     <string name="Copyright">Product with love by jgo @2020</string>
