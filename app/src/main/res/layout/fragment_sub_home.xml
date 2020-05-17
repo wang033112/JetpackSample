@@ -80,11 +80,11 @@
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:layout_margin="@dimen/common_10dp"
-                                android:src="@drawable/logo_lakers"/>
+                                android:src="@drawable/logo_magic"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/team_lakers"/>
+                                android:text="@string/team_magic"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -95,22 +95,21 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="90"
-                                android:textSize="30sp"/>
+                            <com.jgo.video.ui.view.ScrollScoreView
+                                android:id="@+id/sub_game_a_home"
+                                android:layout_width="@dimen/score_size"
+                                android:layout_height="@dimen/score_size"/>
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/common_10dp"
                                 android:text="VS"/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="89"
-                                android:textSize="30sp"/>
+                            <com.jgo.video.ui.view.ScrollScoreView
+                                android:id="@+id/sub_game_a_guest"
+                                android:layout_width="@dimen/score_size"
+                                android:layout_height="@dimen/score_size"/>
 
                         </LinearLayout>
 
@@ -124,11 +123,11 @@
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:layout_margin="@dimen/common_10dp"
-                                android:src="@drawable/logo_mavericks"/>
+                                android:src="@drawable/logo_warriors"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/team_mavericks"/>
+                                android:text="@string/team_warriors"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -212,22 +211,21 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="90"
-                                android:textSize="30sp"/>
+                            <com.jgo.video.ui.view.ScrollScoreView
+                                android:id="@+id/sub_game_b_home"
+                                android:layout_width="@dimen/score_size"
+                                android:layout_height="@dimen/score_size"/>
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/common_10dp"
                                 android:text="VS"/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="89"
-                                android:textSize="30sp"/>
+                            <com.jgo.video.ui.view.ScrollScoreView
+                                android:id="@+id/sub_game_b_guest"
+                                android:layout_width="@dimen/score_size"
+                                android:layout_height="@dimen/score_size"/>
 
                         </LinearLayout>
 

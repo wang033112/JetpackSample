@@ -67,7 +67,7 @@ public class LivingLine extends View {
         animator.setInterpolator(new LinearInterpolator());
         animator.setRepeatCount(ValueAnimator.INFINITE);
         animator.setRepeatMode(ValueAnimator.REVERSE);
-        animator.setDuration(1500);
+        animator.setDuration(2500);
         animator.start();
     }
 

@@ -22,4 +22,7 @@
     <!-- sub schedule-->
     <dimen name="logo_size">50dp</dimen>
 
+    <!-- sub home-->
+    <dimen name="score_size">50dp</dimen>
+
 </resources>

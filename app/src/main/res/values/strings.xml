@@ -24,6 +24,9 @@
     <string name="player_doncic">ルカ・ドンチッチ</string>
     <string name="team_lakers">レイカーズ</string>
     <string name="team_mavericks">マーベリックス</string>
+    <string name="team_magic">マジック</string>
+    <string name="team_warriors">ワォリアーズ</string>
+
     <string name="follow">フォロー</string>
 
     <!-- result -->
