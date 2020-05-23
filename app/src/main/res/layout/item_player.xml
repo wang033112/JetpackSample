@@ -2,13 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <!--<variable
-            name="bean"
-            type="com.jgo.video.data.bean.NewsInfo" />
-
-        <variable
-            name="itemclick"
-            type="com.jgo.video.adapter.NewsAdapter.ItemClick" />-->
     </data>
 
     <RelativeLayout

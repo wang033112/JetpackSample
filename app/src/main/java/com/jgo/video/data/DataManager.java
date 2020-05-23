@@ -6,6 +6,7 @@ import com.jgo.video.R;
 import com.jgo.video.data.bean.ImageInfo;
 import com.jgo.video.data.bean.NewsInfo;
 import com.jgo.video.data.bean.ScheduleInfo;
+import com.jgo.video.data.bean.VideoInfo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -90,5 +91,14 @@ public class DataManager {
             scheduleList.add(new ScheduleInfo("Lakers", "Mavericks", new Date()));
         }
         return scheduleList;
+    }
+
+    public static List<VideoInfo> getVideoList(Context context) {
+        List<VideoInfo> videosList = new ArrayList<>();
+        videosList.add(new VideoInfo(R.raw.jgo_video_1));
+        videosList.add(new VideoInfo(R.raw.jgo_video_2));
+        videosList.add(new VideoInfo(R.raw.jgo_video_3));
+        videosList.add(new VideoInfo(R.raw.jgo_video_4));
+        return videosList;
     }
 }

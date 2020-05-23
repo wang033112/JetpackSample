@@ -67,13 +67,6 @@ public class DrawerFragment extends BaseFragment {
                             navAction = R.id.action_mainFragment_to_newsFragment;
 
                             break;
-                        case R.drawable.ic_video :
-                            navAction = R.id.action_mainFragment_to_videoFragment;
-                            break;
-
-                        case R.drawable.ic_date :
-                            navAction = R.id.action_mainFragment_to_scheduleFragment;
-                            break;
                     }
 
                     if (navAction != -1) {
@@ -91,7 +84,7 @@ public class DrawerFragment extends BaseFragment {
 
         mBinding.rv.setAdapter(mAdapter);
 
-        mInfoRequestViewModel.getLibraryLiveData().observe(this, libraryInfos -> {
+        mInfoRequestViewModel.getLibraryLiveData().observe(getViewLifecycleOwner(), libraryInfos -> {
             mInitDataCame = true;
             if (mAnimationLoaded && libraryInfos != null) {
                 mAdapter.setList(libraryInfos);

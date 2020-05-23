@@ -34,17 +34,11 @@
     <string name="time_str">11:09</string>
 
     <string name="news_title_str">コービーとシャツを交換したイニエスタ</string>
+    <string name="video_title">コービー・ブライアントによるパウ・ガソルとのケミストリー構築を早めた“気遣い</string>
 
 
     <string name="app_slogan">I Love This Game !</string>
-    <string name="project_title">本项目中用到的技术点包括：</string>
     <string name="Copyright">Product with love by jgo @2020</string>
-    <string name="search_page_tip">本页面用于测试 Navigation 路由导航</string>
-
-    <string name="relearn_android">《重学安卓》</string>
-    <string name="learn_more_friends">付费读者加微信进群 myatejx</string>
-    <string name="learn_more">Learn More</string>
-
 
     <string name="dummy_news_title_1">フィットネス維持を目指す選手</string>
     <string name="dummy_news_content_1">新型コロナウイルスの影響でNBAのシーズンは停止しており、選手たちが再び試合できるようになるのがいつかは不明だ。ほとんどバスケットボールのコートに入ることもできず、練習施設も安全上の理由で閉まっている。一般のヘルスクラブやジムも同様だ。

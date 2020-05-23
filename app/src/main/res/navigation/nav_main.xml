@@ -11,50 +11,14 @@
         android:name="com.jgo.video.ui.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
-
-        <action
-            android:id="@+id/action_mainFragment_to_searchFragment"
-            app:destination="@id/searchFragment"
-            app:enterAnim="@anim/h_fragment_enter"
-            app:exitAnim="@anim/h_fragment_exit"
-            app:popEnterAnim="@anim/h_fragment_pop_enter"
-            app:popExitAnim="@anim/h_fragment_pop_exit"
-            />
-
         <action
             android:id="@+id/action_mainFragment_to_newsFragment"
             app:destination="@id/newsFragment"
-            />
-
-        <action
-            android:id="@+id/action_mainFragment_to_videoFragment"
-            app:destination="@id/videoFragment"
-            app:enterAnim="@anim/h_fragment_enter"
-            app:exitAnim="@anim/h_fragment_exit"
-            app:popEnterAnim="@anim/h_fragment_pop_enter"
-            app:popExitAnim="@anim/h_fragment_pop_exit"
-            />
-
-        <action
-            android:id="@+id/action_mainFragment_to_scheduleFragment"
-            app:destination="@id/scheduleFragment"
-            app:enterAnim="@anim/h_fragment_enter"
-            app:exitAnim="@anim/h_fragment_exit"
-            app:popEnterAnim="@anim/h_fragment_pop_enter"
-            app:popExitAnim="@anim/h_fragment_pop_exit"
             />
         <action
             android:id="@+id/action_main_to_newsDetail"
             app:destination="@id/detailActivity">
         </action>
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.jgo.video.ui.fragment.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
 
     </fragment>
 
@@ -80,13 +44,6 @@
         android:id="@+id/videoFragment"
         android:name="com.jgo.video.ui.fragment.VideoFragment"
         android:label="fragment_video" >
-    </fragment>
-
-    <fragment
-        android:id="@+id/scheduleFragment"
-        android:name="com.jgo.video.ui.fragment.ScheduleFragment"
-        android:label="fragment_schedule"
-        tools:layout="@layout/fragment_search" >
     </fragment>
 
     <fragment

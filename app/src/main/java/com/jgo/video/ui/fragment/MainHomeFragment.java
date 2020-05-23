@@ -56,16 +56,32 @@ public class MainHomeFragment extends BaseFragment {
         mHandler = new Handler();
         mGameA.getHomeScore().setValue(10);
         mGameA.getGuestScore().setValue(12);
+        gameARunnable.start();
         mHandler.postDelayed(gameARunnable, 2000);
 
         mGameB.getHomeScore().setValue(11);
         mGameB.getGuestScore().setValue(13);
+        gameBRunnable.start();
         mHandler.postDelayed(gameBRunnable, 3000);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mHandler.removeCallbacks(gameARunnable);
+        if (gameARunnable != null) {
+            gameARunnable.stop();
+        }
+
+        mHandler.removeCallbacks(gameBRunnable);
+        if (gameBRunnable != null) {
+            gameBRunnable.stop();
+        }
     }
 
     private GameBRunnable gameBRunnable = new GameBRunnable();
     private class GameBRunnable implements Runnable {
-
+        private boolean shouldPost;
         @Override
         public void run() {
             mGameBFlag = mGameBFlag == 0 ? 1 :0;
@@ -77,12 +93,23 @@ public class MainHomeFragment extends BaseFragment {
                 mGameB.getGuestScore().setValue(currentValue >= 95 ? 10 : currentValue + 2);
             }
 
-            mHandler.postDelayed(this, 2000);
+            if (shouldPost) {
+                mHandler.postDelayed(this, 2000);
+            }
+        }
+
+        public void stop() {
+            shouldPost = false;
+        }
+
+        public void start() {
+            shouldPost = true;
         }
     }
 
     private GameARunnable gameARunnable = new GameARunnable();
     private class GameARunnable implements Runnable {
+        private boolean shouldPost;
         @Override
         public void run() {
             mGameAFlag = mGameAFlag == 0 ? 1 :0;
@@ -94,7 +121,17 @@ public class MainHomeFragment extends BaseFragment {
                 mGameA.getGuestScore().setValue(currentValue >= 95 ? 10 : currentValue + 3);
             }
 
-            mHandler.postDelayed(this, 3000);
+            if (shouldPost) {
+                mHandler.postDelayed(this, 3000);
+            }
+        }
+
+        public void stop() {
+            shouldPost = false;
+        }
+
+        public void start() {
+            shouldPost = true;
         }
     }
 }
